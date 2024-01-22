@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #txt_khac {
+            height: 40px;
+    }
+    section {
+        border: 2px solid rgb(1, 53, 62);
+        border-radius: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        padding-left: 200px;
+        background-color:rgb(251, 254, 255);
+    }
+    h1{
+    color:rgb(209, 43, 43);
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>FORM ĐĂNG KÝ</h1>
+    <form action="" onsubmit="return validateForm()" name="frm_dk">
+    <p>Họ <input type="text" name="txt_ho" size="20"></p>
+    <p>Tên <input type="text" id="txt_ten" size="20"></p>
+    <p>Ngày sinh: Ngày <select size="1" id="op_ngay">
+        <option selected value="1">1</option>
+        <option selected value="2">2</option>
+        <option selected value="3">3</option>
+        <option selected value="4">4</option>
+        <option selected value="5">5</option>
+        <option selected value="6">6</option>
+        <option selected value="7">7</option>
+        <option selected value="8">8</option>
+        <option selected value="9">9</option>
+        <option selected value="10">10</option>
+
+        <option selected value="11">11</option>
+        <option selected value="12">12</option>
+        <option selected value="13">13</option>
+        <option selected value="14">14</option>
+        <option selected value="15">15</option>
+        <option selected value="16">16</option>
+        <option selected value="17">17</option>
+        <option selected value="18">18</option>
+        <option selected value="19">19</option>
+        <option selected value="20">20</option>
+
+        <option selected value="21">21</option>
+        <option selected value="22">22</option>
+        <option selected value="23">23</option>
+        <option selected value="24">24</option>
+        <option selected value="25">25</option>
+        <option selected value="26">26</option>
+        <option selected value="27">27</option>
+        <option selected value="28">28</option>
+        <option selected value="29">29</option>
+        <option selected value="30">30</option>
+        <option selected value="31">31</option>
+    </select>
+    Tháng <select size="1" id="op_thang">
+        <option selected value="1">1</option>
+        <option selected value="2">2</option>
+        <option selected value="3">3</option>
+        <option selected value="4">4</option>
+        <option selected value="5">5</option>
+        <option selected value="6">6</option>
+        <option selected value="7">7</option>
+        <option selected value="8">8</option>
+        <option selected value="9">9</option>
+        <option selected value="10">10</option>
+        <option selected value="11">11</option>
+        <option selected value="12">12</option>
+    </select>
+    Năm <select size="1" id="op_nam">
+        <option selected value="1">1980</option>
+        <option selected value="1">1981</option>
+        <option selected value="2">1982</option>
+        <option selected value="3">1983</option>
+        <option selected value="4">1984</option>
+        <option selected value="5">1985</option>
+        <option selected value="6">1986</option>
+        <option selected value="7">1987</option>
+        <option selected value="8">1988</option>
+        <option selected value="9">1989</option>
+        <option selected value="10">1990</option>
+        
+        <option selected value="1">1991</option>
+        <option selected value="2">1992</option>
+        <option selected value="3">1993</option>
+        <option selected value="4">1994</option>
+        <option selected value="5">1995</option>
+        <option selected value="6">1996</option>
+        <option selected value="7">1997</option>
+        <option selected value="8">1998</option>
+        <option selected value="9">1999</option>
+        <option selected value="10">2000</option>
+
+        <option selected value="1">2001</option>
+        <option selected value="1">2002</option>
+        <option selected value="2">2003</option>
+        <option selected value="3">2004</option>
+        <option selected value="4">2005</option>
+        <option selected value="5">2006</option>
+        <option selected value="6">2007</option>
+        <option selected value="7">2008</option>
+        <option selected value="8">2009</option>
+        <option selected value="9">2010</option>
+        
+        <option selected value="1">2011</option>
+        <option selected value="1">2012</option>
+        <option selected value="2">2013</option>
+        <option selected value="3">2014</option>
+        <option selected value="4">2015</option>
+        <option selected value="5">2016</option>
+        <option selected value="6">2017</option>
+        <option selected value="7">2018</option>
+        <option selected value="8">2019</option>
+        <option selected value="9">2020</option>
+
+        <option selected value="1">2021</option>
+        <option selected value="1">2022</option>
+        <option selected value="2">2023</option>
+        <option selected value="3">2024</option>
+        
+    </select>
+    </p>
+
+    <p>Giới tính:
+        <input type="radio" name="gioiTinh" value="Nam" required> Nam
+        <input type="radio" name="gioiTinh" value="Nữ"> Nữ
+        <input type="radio" name="gioiTinh" value="Khác"> Khác
+    </p>
+
+    <p>Số điện thoại: <input type="text" id="txt_dienthoai" size="20"> </p>
+
+    <p>Sở thích:
+            <input type="checkbox" name="soThich" value="Đọc sách"> Đọc sách
+            <input type="checkbox" name="soThich" value="Xem phim"> Xem phim
+            <input type="checkbox" name="soThich" value="Nghe nhạc"> Nghe nhạc
+            <input type="checkbox" name="soThich" value="Đá bóng"> Đá bóng
+        </p>
+
+        <p>Khác: <input type="text" id="txt_khac" size="20" required></p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    </section>
+    <script type="text/javascript" src="bai1.js"></script>
+</body>
+</html>
